@@ -77,7 +77,7 @@ public class FormView: UIView {
 
 // http://stackoverflow.com/questions/26600980/how-do-i-set-uibutton-background-color-forstate-uicontrolstate-highlighted-in-s
 extension UIButton {
-	func setBackgroundColor(_ color: UIColor, for state: UIControlState) {
+	func setBackgroundColor(_ color: UIColor, for state: UIControl.State) {
 		UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
 		let context = UIGraphicsGetCurrentContext()!
 		context.setFillColor(color.cgColor)
